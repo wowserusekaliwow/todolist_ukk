@@ -1,13 +1,20 @@
+@font-face {
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend.ttf') format('truetype');
+}
+
 /* Reset default margin dan padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Lexend", serif;
 }
 
 /* Body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Lexend", serif;
+    font-weight: 300;
     background-color: #1a1a1a;
     color: white;
     padding: 20px;
@@ -15,7 +22,7 @@ body {
 
 /* Judul */
 h1 {
-    font-size: 32px;
+    font-size: 48px;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -59,13 +66,13 @@ th {
 
 /* Rounded header tabel */
 th:first-child {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
 th:last-child {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 /* Baris tabel */
@@ -119,6 +126,23 @@ td {
     font-weight: bold;
 }
 
+.priority-low {
+    color: green;
+    font-weight: bold;
+}
+
+/* ✅ Tugas selesai: garis tengah & warna abu-abu */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* ✅ Prioritas tugas selesai: tetap berwarna tapi opacity rendah */
+.opacity-low {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
 /* Tombol aksi */
 button {
     cursor: pointer;
@@ -136,4 +160,10 @@ button {
 .delete {
     background-color: #ff4d4d;
     color: white;
+}
+
+.edit:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    opacity: 0.6;
 }
