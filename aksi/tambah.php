@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sss", $nama_tugas, $tanggal, $prioritas);
     $stmt->execute();
 
-    header("Location: index.php");
+    header("Location: ../index.php");
     exit();
 }
 ?>

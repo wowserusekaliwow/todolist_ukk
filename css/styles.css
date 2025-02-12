@@ -84,6 +84,14 @@ td {
     padding: 15px;
     font-size: 18px;
     vertical-align: middle;
+    word-wrap: break-word; /* Biarkan teks panjang turun ke baris baru */
+}
+
+/* ✅ Kolom "Aksi" tetap di kanan dengan ukuran tetap */
+td:last-child, th:last-child {
+    width: 150px; /* Ukuran tetap */
+    text-align: center;
+    white-space: nowrap; /* Mencegah teks dalam aksi pindah baris */
 }
 
 /* Task Container (Checkbox + Teks) */
@@ -115,7 +123,7 @@ td {
     gap: 10px;
 }
 
-/* Prioritas */
+/* ✅ Kolom prioritas tetap berwarna meskipun tugas selesai */
 .priority-high {
     color: red;
     font-weight: bold;
@@ -162,6 +170,7 @@ button {
     color: white;
 }
 
+/* Tombol edit dinonaktifkan jika tugas selesai */
 .edit:disabled {
     background-color: #555;
     cursor: not-allowed;

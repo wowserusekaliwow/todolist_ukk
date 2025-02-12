@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sssi", $nama_tugas, $tanggal, $prioritas, $id);
     $stmt->execute();
 
-    header("Location: index.php");
+    header("Location: ../index.php");
     exit();
 }
 ?>
