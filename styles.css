@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Body full screen */
+/* Body */
 body {
     font-family: Arial, sans-serif;
     background-color: #1a1a1a;
@@ -76,22 +76,21 @@ tr {
 td {
     padding: 15px;
     font-size: 18px;
+    vertical-align: middle;
 }
 
-/* ======================= */
-/* ✅ Style untuk Checkbox */
-/* ======================= */
-.checkbox-container {
+/* Task Container (Checkbox + Teks) */
+.task-container {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-/* Style tombol checkbox */
+/* Tombol checkbox */
 .checkbox-btn {
     background: none;
     border: none;
-    font-size: 28px; /* Membesarkan checkbox */
+    font-size: 28px;
     cursor: pointer;
     color: #ffffff;
     transition: color 0.3s;
@@ -99,14 +98,13 @@ td {
 
 /* Warna saat checkbox aktif */
 .checkbox-btn.checked i {
-    color: #1ed760; /* Warna hijau saat tercentang */
+    color: gray;
 }
 
-/* ======================= */
-/* ✅ Style untuk Aksi */
-/* ======================= */
+/* Aksi (Edit & Hapus) */
 .aksi-container {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 

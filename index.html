@@ -14,47 +14,52 @@
     <table>
         <thead>
             <tr>
-                <th class="rounded">Nama Tugas</th>
-                <th class="rounded">Tanggal</th>
-                <th class="rounded">Prioritas</th>
-                <th class="rounded">Aksi</th>
+                <th>Nama Tugas</th>
+                <th>Tanggal</th>
+                <th>Prioritas</th>
+                <th>Aksi</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>
-                    <div class="checkbox-container">
+                    <div class="task-container">
                         <button class="checkbox-btn" onclick="toggleCheckbox(this)">
                             <i class='bx bx-checkbox'></i>
                         </button>
-                        Nguli Primogem Non-stop 10 jam
+                        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore deserunt hic dolorem unde illum dolorum omnis, impedit ipsa id, ipsam cupiditate in officiis molestiae debitis ducimus quasi? Iure, tempore amet?</span>
                     </div>
                 </td>
                 <td>24/03/2025</td>
                 <td class="priority-high">Tinggi</td>
-                <td class="aksi-container">
-                    <button class="edit">Edit</button>
-                    <button class="delete">Hapus</button>
+                <td>
+                    <div class="aksi-container">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Hapus</button>
+                    </div>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <div class="checkbox-container">
+                    <div class="task-container">
                         <button class="checkbox-btn" onclick="toggleCheckbox(this)">
                             <i class='bx bx-checkbox'></i>
                         </button>
-                        Buang tayi kucing
+                        <span>Buang tayi kucing</span>
                     </div>
                 </td>
                 <td>24/03/2025</td>
                 <td class="priority-medium">Sedang</td>
-                <td class="aksi-container">
-                    <button class="edit">Edit</button>
-                    <button class="delete">Hapus</button>
+                <td>
+                    <div class="aksi-container">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Hapus</button>
+                    </div>
                 </td>
             </tr>
         </tbody>
     </table>
+    
 
     <script>
         function toggleCheckbox(button) {
