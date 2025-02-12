@@ -3,23 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
+    <title>To do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>To do <span class="highlight">List</span></h1>
-        <button class="add-btn">+</button>
-        <ul class="todo-list">
-            <li class="todo-item">
-                <input type="checkbox" id="task1">
-                <div class="todo-text">
-                    <label for="task1">Isi tugas disini</label>
-                    <span class="date">24 November</span>
-                </div>
-                <button class="delete-btn">🗑</button>
-            </li>
-        </ul>
-    </div>
+    <h1>To do <span class="highlight">List</span></h1>
+    <button class="add-task">+</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="rounded">Nama Tugas</th>
+                <th class="rounded">Tanggal</th>
+                <th class="rounded">Prioritas</th>
+                <th class="rounded">Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="checkbox-container">
+                        <button class="checkbox-btn" onclick="toggleCheckbox(this)">
+                            <i class='bx bx-checkbox'></i>
+                        </button>
+                        Nguli Primogem Non-stop 10 jam
+                    </div>
+                </td>
+                <td>24/03/2025</td>
+                <td class="priority-high">Tinggi</td>
+                <td class="aksi-container">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Hapus</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="checkbox-container">
+                        <button class="checkbox-btn" onclick="toggleCheckbox(this)">
+                            <i class='bx bx-checkbox'></i>
+                        </button>
+                        Buang tayi kucing
+                    </div>
+                </td>
+                <td>24/03/2025</td>
+                <td class="priority-medium">Sedang</td>
+                <td class="aksi-container">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Hapus</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function toggleCheckbox(button) {
+            let icon = button.querySelector("i");
+
+            if (icon.classList.contains("bx-checkbox")) {
+                icon.classList.replace("bx-checkbox", "bx-checkbox-checked");
+                button.classList.add("checked");
+            } else {
+                icon.classList.replace("bx-checkbox-checked", "bx-checkbox");
+                button.classList.remove("checked");
+            }
+        }
+    </script>
 </body>
 </html>
