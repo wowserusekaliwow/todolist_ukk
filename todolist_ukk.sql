@@ -40,12 +40,6 @@ CREATE TABLE `tasks` (
 -- Dumping data for table `tasks`
 --
 
-INSERT INTO `tasks` (`id`, `nama_tugas`, `tanggal`, `prioritas`, `status`, `created_at`) VALUES
-(4, 'dgsdgfdsdfsgdfgdf', '2025-02-12', 'Sedang', 0, '2025-02-12 02:38:16'),
-(5, 'dgsdgfdsdfsgdfgdf', '2025-02-12', 'Sedang', 0, '2025-02-12 03:25:03'),
-(6, 'dsfdfs', '2025-02-12', 'Rendah', 0, '2025-02-12 03:51:57'),
-(7, 'lorem lkdjfhdkls; hjdsafklds;fj;a;lskfj dsa kl;adsjfdsajk faklsdfjklsjfkl adsj fdsf kdlsaj fasdklfdsaf;kljssdfjfkldsajfasdfadsfadjsklfajsdklf', '2025-01-27', 'Tinggi', 0, '2025-02-12 04:17:03');
-
 --
 -- Indexes for dumped tables
 --
