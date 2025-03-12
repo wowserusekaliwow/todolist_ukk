@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Gabarito';
+    src: url('../fonts/Gabarito.ttf') format('truetype');
+}
+
 /* Reset default margin dan padding */
 * {
     margin: 0;
@@ -7,7 +12,7 @@
 
 /* Body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Gabarito", sans-serif;
     background-color: #1a1a1a;
     color: white;
     display: flex;

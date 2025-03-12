@@ -1,8 +1,8 @@
 <?php
-$host = "localhost"; // Sesuaikan jika menggunakan hosting
-$user = "root"; // Username MySQL (default: root)
-$pass = ""; // Password MySQL (default kosong di XAMPP)
-$db = "todolist_ukk"; // Nama database
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "todolist_ukk";
 
 $conn = new mysqli($host, $user, $pass, $db);
 

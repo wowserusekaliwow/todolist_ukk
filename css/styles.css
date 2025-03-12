@@ -3,12 +3,16 @@
     src: url('../fonts/Lexend.ttf') format('truetype');
 }
 
-/* Reset default margin dan padding */
+@font-face {
+    font-family: 'Gabarito';
+    src: url('../fonts/Gabarito.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lexend", serif;
+    font-family: "Gabarito", serif;
 }
 
 /* Body */
@@ -20,7 +24,6 @@ body {
     padding: 20px;
 }
 
-/* Judul */
 h1 {
     font-size: 48px;
     font-weight: bold;
@@ -45,7 +48,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Tabel */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -108,6 +110,8 @@ td:last-child, th:last-child {
     font-size: 28px;
     cursor: pointer;
     color: #ffffff;
+    display: flex;
+    align-items: center;
     transition: color 0.3s;
 }
 
@@ -166,7 +170,7 @@ button {
 }
 
 .delete {
-    background-color: #ff4d4d;
+    background-color: #e61919;
     color: white;
 }
 
